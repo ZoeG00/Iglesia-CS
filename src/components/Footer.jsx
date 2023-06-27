@@ -18,7 +18,7 @@ export default function Footer() {
     <footer className="relative w-full pt-8">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
-        <img src='../../public/logo-negro.png' className="w-32"/>
+        <img src='../../src/assets/img/logo-negro.png' className="w-32"/>
           <div className="grid grid-cols-3 justify-between gap-4">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>
