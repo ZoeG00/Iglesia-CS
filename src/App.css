@@ -1,0 +1,55 @@
+
+#root {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/***********
+Mapa responsive
+*************/
+#map-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Ajusta este valor según tus necesidades */
+  margin: 0 auto;
+}
+
+#map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%; /* Proporción 16:9 (ajusta este valor según la relación de aspecto deseada) */
+  position: relative;
+  height: 0;
+}
+
+#map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
