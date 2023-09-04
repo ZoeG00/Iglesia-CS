@@ -9,18 +9,14 @@ import {
   SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 const products = [
-  { name: 'Niños', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Adolescentes', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Jóvenes', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Matrimonios', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Intercesores', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-]
-const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
+  { name: 'Niños', href: '#', icon: ChartPieIcon },
+  { name: 'Adolescentes', href: '#', icon: CursorArrowRaysIcon },
+  { name: 'Jóvenes', href: '#', icon: FingerPrintIcon },
+  { name: 'Matrimonios', href: '#', icon: SquaresPlusIcon },
+  { name: 'Intercesores', href: '#', icon: ArrowPathIcon },
 ]
 
 function classNames(...classes) {
@@ -84,18 +80,7 @@ export default function Example() {
                     </div>
                   ))}
                 </div>
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                  {callsToAction.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
-                    >
-                      <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
+
               </Popover.Panel>
             </Transition>
           </Popover>
