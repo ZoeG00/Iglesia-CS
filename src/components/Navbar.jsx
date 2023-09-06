@@ -10,13 +10,13 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-
+import { Link } from 'react-router-dom';
 const products = [
-  { name: "Niños", href: "#", icon: ChartPieIcon },
-  { name: "Adolescentes", href: "#", icon: CursorArrowRaysIcon },
-  { name: "Jóvenes", href: "#", icon: FingerPrintIcon },
-  { name: "Matrimonios", href: "#", icon: SquaresPlusIcon },
-  { name: "Intercesores", href: "#", icon: ArrowPathIcon },
+  { name: "Niños", href: "/Kids", icon: ChartPieIcon },
+  { name: "Adolescentes", href: "/Adolescentes", icon: CursorArrowRaysIcon },
+  { name: "Jóvenes", href: "/Jovenes", icon: FingerPrintIcon },
+  { name: "Matrimonios", href: "/Matrimonios", icon: SquaresPlusIcon },
+  { name: "Intercesores", href: "/Intercesores", icon: ArrowPathIcon },
 ];
 
 function classNames(...classes) {
@@ -33,7 +33,7 @@ export default function Example() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="/Home" className="-m-1.5 p-1.5">
             <img
               className="w-32"
               src="../../assets/logo-blanco.png"
@@ -77,12 +77,7 @@ export default function Example() {
                       key={item.name}
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon
-                          className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
-                          aria-hidden="true"
-                        />
-                      </div>
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"></div>
                       <div className="flex-auto">
                         <a
                           href={item.href}
@@ -100,15 +95,21 @@ export default function Example() {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
+          <a href="/" className="text-sm font-semibold leading-6 text-white">
             Inicio
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
+          <a
+            href="/Sobrenosotros"
+            className="text-sm font-semibold leading-6 text-white"
+          >
             Sobre Nosotros
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
+          <Link
+            to="/Contacto"
+            className="text-sm font-semibold leading-6 text-white"
+          >
             Contacto
-          </a>
+          </Link>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
       </nav>
@@ -155,7 +156,7 @@ export default function Example() {
                         />
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...products, ...callsToAction].map((item) => (
+                        {[...products].map((item) => (
                           <Disclosure.Button
                             key={item.name}
                             as="a"
