@@ -1,5 +1,5 @@
-import { Fragment, useState } from 'react'
-import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
+import { Fragment, useState } from "react";
+import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import {
   ArrowPathIcon,
   Bars3Icon,
@@ -8,30 +8,37 @@ import {
   FingerPrintIcon,
   SquaresPlusIcon,
   XMarkIcon,
-} from '@heroicons/react/24/outline'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
-
+} from "@heroicons/react/24/outline";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import { Link } from 'react-router-dom';
 const products = [
-  { name: 'Niños', href: '#', icon: ChartPieIcon },
-  { name: 'Adolescentes', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Jóvenes', href: '#', icon: FingerPrintIcon },
-  { name: 'Matrimonios', href: '#', icon: SquaresPlusIcon },
-  { name: 'Intercesores', href: '#', icon: ArrowPathIcon },
-]
+  { name: "Niños", href: "/Kids", icon: ChartPieIcon },
+  { name: "Adolescentes", href: "/Adolescentes", icon: CursorArrowRaysIcon },
+  { name: "Jóvenes", href: "/Jovenes", icon: FingerPrintIcon },
+  { name: "Matrimonios", href: "/Matrimonios", icon: SquaresPlusIcon },
+  { name: "Intercesores", href: "/Intercesores", icon: ArrowPathIcon },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="bg-gradient-to-r from-azul to-black">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav
+        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        aria-label="Global"
+      >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <img className="w-32" src="../../src/assets/img/logo-blanco.png" alt="logo" />
+          <a href="/Home" className="-m-1.5 p-1.5">
+            <img
+              className="w-32"
+              src="../../assets/logo-blanco.png"
+              alt="logo"
+            />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -48,7 +55,10 @@ export default function Example() {
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white hover:text-indigo-600 p-0 border-0">
               Áreas
-              <ChevronDownIcon className="h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+              <ChevronDownIcon
+                className="h-5 w-5 flex-none text-indigo-600"
+                aria-hidden="true"
+              />
             </Popover.Button>
 
             <Transition
@@ -67,11 +77,12 @@ export default function Example() {
                       key={item.name}
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
-                      </div>
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"></div>
                       <div className="flex-auto">
-                        <a href={item.href} className="block font-semibold text-gray-900">
+                        <a
+                          href={item.href}
+                          className="block font-semibold text-gray-900"
+                        >
                           {item.name}
                           <span className="absolute inset-0" />
                         </a>
@@ -80,25 +91,34 @@ export default function Example() {
                     </div>
                   ))}
                 </div>
-
               </Popover.Panel>
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
+          <a href="/" className="text-sm font-semibold leading-6 text-white">
             Inicio
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
+          <a
+            href="/Sobrenosotros"
+            className="text-sm font-semibold leading-6 text-white"
+          >
             Sobre Nosotros
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
+          <Link
+            to="/Contacto"
+            className="text-sm font-semibold leading-6 text-white"
+          >
             Contacto
-          </a>
+          </Link>
         </Popover.Group>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-        </div>
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
       </nav>
-      <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+      <Dialog
+        as="div"
+        className="lg:hidden"
+        open={mobileMenuOpen}
+        onClose={setMobileMenuOpen}
+      >
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
@@ -128,12 +148,15 @@ export default function Example() {
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                         Product
                         <ChevronDownIcon
-                          className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
+                          className={classNames(
+                            open ? "rotate-180" : "",
+                            "h-5 w-5 flex-none"
+                          )}
                           aria-hidden="true"
                         />
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...products, ...callsToAction].map((item) => (
+                        {[...products].map((item) => (
                           <Disclosure.Button
                             key={item.name}
                             as="a"
@@ -153,5 +176,5 @@ export default function Example() {
         </Dialog.Panel>
       </Dialog>
     </header>
-  )
+  );
 }

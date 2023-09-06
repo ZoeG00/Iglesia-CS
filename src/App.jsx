@@ -1,22 +1,27 @@
-
-import './App.css'
-
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+/************
+ Estilos
+ */
+import "tailwindcss/tailwind.css";
+import "./App.css";
+/***
+ Navbar y footer
+ */
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 /*****
- PAGES
+ Rutas
  *****/
-import Home from './Pages/Home'
-import 'tailwindcss/tailwind.css'
-function App() {
+import Rutas from "./routes/rutas";
 
+function App() {
   return (
     <>
-  <Navbar/>
-  <Home/>
-  <Footer/>
+      <Navbar />
+      <Rutas />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+
+export default App;
