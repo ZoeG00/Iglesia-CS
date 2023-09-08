@@ -1,10 +1,10 @@
-import HomeSlider from "../components/HomeSlider"
+import HomeSliderJovenes from "../components/HomeSliderJovenes"
 
 export default function Jovenes() {
 
     return(
 
-        <HomeSlider/>
+        <HomeSliderJovenes/>
  
         
     )

@@ -1,8 +1,8 @@
-import HomeSlider from "../components/HomeSlider"
+import HomeSliderKids from "../components/HomeSliderKids"
 
 export default function Kids() {
 
     return(
-        <HomeSlider/>
+        <HomeSliderKids/>
     )
 }
