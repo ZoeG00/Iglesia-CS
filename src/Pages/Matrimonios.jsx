@@ -1,10 +1,10 @@
-import HomeSlider from "../components/HomeSlider"
+import HomeSliderMatrimonios from "../components/HomeSliderMatrimonios"
 
 export default function Matrimonios() {
 
     return(
 
-        <HomeSlider/>
+        <HomeSliderMatrimonios/>
  
         
     )

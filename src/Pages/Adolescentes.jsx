@@ -1,10 +1,10 @@
-import HomeSlider from "../components/HomeSlider"
+import HomeSliderAdos from "../components/HomeSliderAdos"
 
 export default function Adolescentes() {
 
     return(
 
-        <HomeSlider/>
+        <HomeSliderAdos/>
  
         
     )
