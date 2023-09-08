@@ -5,7 +5,7 @@ export default function Ubicacion() {
     <>
       <div id="map-container">
         <Typography className=" text-azul pt-4" variant="h3">
-          ¡Ven a la casa!
+          ¡Ven a casa!
         </Typography>
         <Typography className="pb-4 text-black" variant="h6">
           ¿Cómo llegar?
