@@ -6,13 +6,13 @@ export default function HomeSlider() {
       loop={true}
       autoplay={true}
       autoplayDelay={7000}
-      className="rounded-xl"
+      className="rounded-xl carousel-custom-height"
     >
       <div className="relative h-full w-full">
         <img
           src="../../assets/templo.png"
           alt="image 1"
-          className="h-50 w-full object-cover"
+          className="h-full w-full object-cover"
         />
         <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
           <div className="w-3/4 text-center md:w-2/4">

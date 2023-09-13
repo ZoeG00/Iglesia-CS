@@ -5,6 +5,10 @@
   margin: 0 auto;
   text-align: center;
 }
+
+.carousel-custom-height {
+  height: 500px; /* Ajusta la altura según tus necesidades */
+}
 /***********
 Mapa responsive
 *************/
