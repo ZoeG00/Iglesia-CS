@@ -11,17 +11,19 @@ import Footer from "./components/Footer";
 /*****
  Rutas
  *****/
+ import { BrowserRouter } from "react-router-dom";
 import Rutas from "./routes/rutas";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Rutas />
-      <Footer />
+      <BrowserRouter>
+        <Navbar />
+        <Rutas />
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }
-
 
 export default App;
