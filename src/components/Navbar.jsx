@@ -12,7 +12,7 @@ import {
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Link } from "react-router-dom";
 
-const products = [
+const links = [
   { name: "Niños", href: "Kids", icon: ChartPieIcon },
   { name: "Adolescentes", href: "Adolescentes", icon: CursorArrowRaysIcon },
   { name: "Jóvenes", href: "Jovenes", icon: FingerPrintIcon },
@@ -72,7 +72,7 @@ export default function Navbar() {
             >
               <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
                 <div className="p-4">
-                  {products.map((item) => (
+                  {links.map((item) => (
                     <div
                       key={item.name}
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
@@ -156,7 +156,7 @@ export default function Navbar() {
                         />
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...products].map((item) => (
+                        {[...links].map((item) => (
                           <Disclosure.Button
                             key={item.name}
                             as="a"

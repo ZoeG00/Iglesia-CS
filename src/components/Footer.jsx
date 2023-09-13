@@ -3,7 +3,7 @@ import { Typography } from "@material-tailwind/react";
 const LINKS = [
   {
     title: "Áreas",
-    items: ["Niños", "Adolescentes", "Jóvenes", "Matrimonios"],
+    items: ["Kids", "Adolescentes", "Jovenes", "Matrimonios"],
   },
   {
     title: "Iglesia",
@@ -33,7 +33,7 @@ export default function Footer() {
                   <li key={link}>
                     <Typography
                       as="a"
-                      href="#"
+                      href={`/${link}`}
                       color="gray"
                       className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
                     >
