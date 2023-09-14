@@ -10,7 +10,7 @@ export default function HomeSlider() {
     >
       <div className="relative h-full w-full">
         <img
-          src="https://ibb.co/ZSm4xBC"
+          src="https://i.ibb.co/f9v6Hk7/templo.png"
           alt="image 1"
           className="h-full w-full object-cover"
         />
