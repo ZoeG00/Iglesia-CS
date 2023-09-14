@@ -3,7 +3,7 @@ export default function Pastores() {
     <>
       <div className="columns-2 bg-gradient-to-r from-black to-azul p-12 text-white flex justify-center items-center">
         <img
-          src="../../assets/pastores.png"
+          src="https://i.ibb.co/FVNty1r/pastores.png" 
           alt="pastores"
           className="rounded-full w-64"
         />

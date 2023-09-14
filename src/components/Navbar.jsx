@@ -33,7 +33,7 @@ export default function Navbar() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="/Home" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <img
               className="w-32"
               src="https://i.ibb.co/f9gcwfd/logo-blanco.png"
@@ -71,7 +71,7 @@ export default function Navbar() {
               leaveTo="opacity-0 translate-y-1"
             >
               <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
-                <div className="p-4">
+                <div>
                   {links.map((item) => (
                     <div
                       key={item.name}
@@ -86,7 +86,6 @@ export default function Navbar() {
                           {item.name}
                           <span className="absolute inset-0" />
                         </a>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
                       </div>
                     </div>
                   ))}
@@ -126,7 +125,7 @@ export default function Navbar() {
               <span className="sr-only">ICS</span>
               <img
                 className="h-8 w-auto"
-                src="../../assets/logo-negro.png"
+                src="https://i.ibb.co/jDcLRg1/logo-negro.png"
                 alt="logo"
               />
             </a>
@@ -146,7 +145,7 @@ export default function Navbar() {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Product
+                        Áreas
                         <ChevronDownIcon
                           className={classNames(
                             open ? "rotate-180" : "",
@@ -167,6 +166,15 @@ export default function Navbar() {
                           </Disclosure.Button>
                         ))}
                       </Disclosure.Panel>
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                      <a href="/"> Inicio</a>
+                      </Disclosure.Button>
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                        <a href="/Sobrenosotros">Sobre Nosotros</a>
+                      </Disclosure.Button>
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                        <a href="Contacto">Contacto</a>
+                      </Disclosure.Button>
                     </>
                   )}
                 </Disclosure>
