@@ -36,7 +36,7 @@ export default function Navbar() {
           <a href="/Home" className="-m-1.5 p-1.5">
             <img
               className="w-32"
-              src="../../assets/logo-blanco.png"
+              src="https://i.ibb.co/f9gcwfd/logo-blanco.png"
               alt="logo"
             />
           </a>

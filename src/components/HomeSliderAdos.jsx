@@ -10,7 +10,7 @@ export default function HomeSlider() {
     >
       <div className="relative h-full w-full">
         <img
-          src="../assets/ados.jpg"
+          src="https://i.ibb.co/gW5Wb6M/ados.jpg"
           alt="image 1"
           className="h-full w-full object-cover"
         />
@@ -31,7 +31,7 @@ export default function HomeSlider() {
       </div>
       <div className="relative h-full w-full">
         <img
-          src="../assets/ados2.jpg"
+          src="https://i.ibb.co/d6scC6k/ados2.jpg"
           alt="image 2"
           className="h-full w-full object-cover"
         />
@@ -56,7 +56,7 @@ export default function HomeSlider() {
       </div>
       <div className="relative h-full w-full">
         <img
-          src="../assets/ados3.jpg"
+          src="https://i.ibb.co/M9yRsrF/ados3.jpg"
           alt="image 3"
           className="h-full w-full object-cover"
         />
