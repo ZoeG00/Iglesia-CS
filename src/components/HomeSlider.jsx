@@ -1,4 +1,4 @@
-import { Carousel, Typography} from "@material-tailwind/react";
+import { Carousel, Typography } from "@material-tailwind/react";
 
 export default function HomeSlider() {
   return (
@@ -10,7 +10,7 @@ export default function HomeSlider() {
     >
       <div className="relative h-full w-full">
         <img
-          src="../../assets/templo.png"
+          src="./assets/templo.png"
           alt="image 1"
           className="h-full w-full object-cover"
         />
@@ -23,11 +23,7 @@ export default function HomeSlider() {
             >
               BIENVENIDOS
             </Typography>
-            <Typography
-              variant="h5"
-              color="white"
-              className="mb-12 opacity-80"
-            >
+            <Typography variant="h5" color="white" className="mb-12 opacity-80">
               ¡Esta es tu casa!
             </Typography>
           </div>
@@ -35,7 +31,7 @@ export default function HomeSlider() {
       </div>
       <div className="relative h-full w-full">
         <img
-          src="../../assets/hermanos.png"
+          src="../assets/hermanos.png"
           alt="image 2"
           className="h-full w-full object-cover"
         />
@@ -60,7 +56,7 @@ export default function HomeSlider() {
       </div>
       <div className="relative h-full w-full">
         <img
-          src="../../assets/culto.png"
+          src="../assets/culto.png"
           alt="image 3"
           className="h-full w-full object-cover"
         />
@@ -71,14 +67,14 @@ export default function HomeSlider() {
               color="white"
               className="mb-4 text-3xl md:text-4xl lg:text-5xl"
             >
-             Oración
+              Oración
             </Typography>
             <Typography
               variant="lead"
               color="white"
               className="mb-12 opacity-80"
             >
-             Martes 20.30hs 
+              Martes 20.30hs
             </Typography>
           </div>
         </div>
