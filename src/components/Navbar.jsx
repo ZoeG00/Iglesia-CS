@@ -13,10 +13,10 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Link } from "react-router-dom";
 
 const links = [
-  { name: "Niños", href: "Kids", icon: ChartPieIcon },
-  { name: "Adolescentes", href: "Adolescentes", icon: CursorArrowRaysIcon },
-  { name: "Jóvenes", href: "Jovenes", icon: FingerPrintIcon },
-  { name: "Matrimonios", href: "Matrimonios", icon: SquaresPlusIcon },
+  { name: "Niños", href: "/Kids", icon: ChartPieIcon },
+  { name: "Adolescentes", href: "/Adolescentes", icon: CursorArrowRaysIcon },
+  { name: "Jóvenes", href: "/Jovenes", icon: FingerPrintIcon },
+  { name: "Matrimonios", href: "/Matrimonios", icon: SquaresPlusIcon },
 ];
 
 function classNames(...classes) {
@@ -72,23 +72,54 @@ export default function Navbar() {
             >
               <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
                 <div>
-                  {links.map((item) => (
-                    <div
-                      key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
-                    >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"></div>
-                      <div className="flex-auto">
-                        <a
-                          href={item.href}
-                          className="block font-semibold text-gray-900"
-                        >
-                          {item.name}
-                          <span className="absolute inset-0" />
-                        </a>
-                      </div>
+                  <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                    <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"></div>
+                    <div className="flex-auto">
+                      <a
+                        href="/Kids"
+                        className="block font-semibold text-gray-900"
+                      >
+                        Kids
+                        <span className="absolute inset-0" />
+                      </a>
                     </div>
-                  ))}
+                  </div>
+                  <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                    <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"></div>
+                    <div className="flex-auto">
+                      <a
+                        href="/Adolescentes"
+                        className="block font-semibold text-gray-900"
+                      >
+                        Adolescentes
+                        <span className="absolute inset-0" />
+                      </a>
+                    </div>
+                  </div>
+                  <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                    <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"></div>
+                    <div className="flex-auto">
+                      <a
+                        href="/Jovenes"
+                        className="block font-semibold text-gray-900"
+                      >
+                        Jóvenes
+                        <span className="absolute inset-0" />
+                      </a>
+                    </div>
+                  </div>
+                  <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                    <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"></div>
+                    <div className="flex-auto">
+                      <a
+                        href="/Matrimonios"
+                        className="block font-semibold text-gray-900"
+                      >
+                        Matrimonios
+                        <span className="absolute inset-0" />
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </Popover.Panel>
             </Transition>
@@ -98,7 +129,7 @@ export default function Navbar() {
             Inicio
           </a>
           <a
-            href="/Sobrenosotros"
+            href="/SobreNosotros"
             className="text-sm font-semibold leading-6 text-white"
           >
             Sobre Nosotros
@@ -167,13 +198,13 @@ export default function Navbar() {
                         ))}
                       </Disclosure.Panel>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                      <a href="/"> Inicio</a>
+                        <a href="/"> Inicio</a>
                       </Disclosure.Button>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        <a href="/Sobrenosotros">Sobre Nosotros</a>
+                        <a href="/SobreNosotros">Sobre Nosotros</a>
                       </Disclosure.Button>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        <a href="Contacto">Contacto</a>
+                        <a href="/Contacto">Contacto</a>
                       </Disclosure.Button>
                     </>
                   )}
