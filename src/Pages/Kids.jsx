@@ -1,8 +1,5 @@
-import HomeSliderKids from "../components/HomeSliderKids"
+import HomeSliderKids from "../components/HomeSliderKids";
 
 export default function Kids() {
-
-    return(
-        <HomeSliderKids/>
-    )
+  return <HomeSliderKids />;
 }

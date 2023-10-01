@@ -1,6 +1,6 @@
 import { Carousel, Typography } from "@material-tailwind/react";
 
-export default function HomeSlider() {
+export default function HomeSliderAdos() {
   return (
     <Carousel
       loop={true}

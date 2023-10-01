@@ -1,11 +1,5 @@
-import HomeSliderJovenes from "../components/HomeSliderJovenes"
+import HomeSliderJovenes from "../components/HomeSliderJovenes";
 
 export default function Jovenes() {
-
-    return(
-
-        <HomeSliderJovenes/>
- 
-        
-    )
+  return <HomeSliderJovenes />;
 }

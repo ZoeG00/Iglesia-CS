@@ -1,6 +1,6 @@
-import { Carousel, Typography} from "@material-tailwind/react";
+import { Carousel, Typography } from "@material-tailwind/react";
 
-export default function HomeSlider() {
+export default function HomeSliderJovenes() {
   return (
     <Carousel
       loop={true}
@@ -21,13 +21,9 @@ export default function HomeSlider() {
               color="white"
               className="mb-4 text-3xl md:text-4xl lg:text-5xl"
             >
-             JÓVENES
+              JÓVENES
             </Typography>
-            <Typography
-              variant="h5"
-              color="white"
-              className="mb-12 opacity-80"
-            >
+            <Typography variant="h5" color="white" className="mb-12 opacity-80">
               Sábados 20:30hs
             </Typography>
           </div>
@@ -71,9 +67,8 @@ export default function HomeSlider() {
               color="white"
               className="mb-4 text-3xl md:text-4xl lg:text-5xl"
             >
-             ¡Te esperamos!
+              ¡Te esperamos!
             </Typography>
-
           </div>
         </div>
       </div>
