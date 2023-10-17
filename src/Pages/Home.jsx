@@ -1,12 +1,9 @@
 import HomeSlider from "../components/HomeSlider";
 import Ubicacion from "../components/Ubicacion";
 import Pastores from "../components/Pastores";
-import Conexion from "../components/GruposConexion";
 import Mision from "../components/Mision";
-import Intercesores from "../components/Intercesores";
-import Varones from "../components/Varones";
-import Damas from "../components/Damas";
-
+import Conexion from "../components/GruposConexion";
+import HomeSliderAreas from "../components/HomeSliderAreas";
 export default function Home() {
   return (
     <>
@@ -14,9 +11,7 @@ export default function Home() {
       <Mision />
       <Pastores />
       <Conexion />
-      <Intercesores />
-      <Varones />
-      <Damas />
+      <HomeSliderAreas />
       <Ubicacion />
     </>
   );

@@ -113,25 +113,15 @@ Sección Contacto
 
 
 /* Social Media Icons */
-.social-media-list {
-  position: relative;
-  font-size: 22px;
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-}
 
 .social-media-list li a {
   color: #fff;
 }
 
 .social-media-list li {
-  position: relative; 
-  display: inline-block;
   height: 60px;
   width: 60px;
-  margin: 5px 3px;
+  margin: 5px 3px 0 20px;
   line-height: 60px;
   border-radius: 50%;
   color: #fff;
@@ -141,10 +131,6 @@ Sección Contacto
 }
 
 .social-media-list li:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 60px;
   height: 60px;
   line-height: 60px;
@@ -185,7 +171,6 @@ Sección Contacto
   }  
   
   .direct-contact-container {
-    margin-top: 60px;
     max-width: 300px;
   }    
   .social-media-list li {
