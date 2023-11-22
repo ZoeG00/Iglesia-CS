@@ -39,7 +39,7 @@ export default function Footer() {
                       color="gray"
                       className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
                     >
-                      <Link to={items.href}>{items}</Link>
+                      <Link to={items.href}>{items.name}</Link>
                     </Typography>
                   </li>
                 ))}
