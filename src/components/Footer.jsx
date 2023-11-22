@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 const LINKS = [
   {
     title: "Áreas",
-    items: ["Kids", "Adolescentes", "Jovenes", "Matrimonios"],
-    href: ["/kids", "/adolescentes", "/jovenes", "/matrimonios"]
+    name: ["Kids", "Adolescentes", "Jovenes", "Matrimonios"],
+    href: ["/kids", "/adolescentes", "/jovenes", "/matrimonios"],
   },
   {
     title: "Iglesia",
-    items: ["Sobre Nosotros", "Ubicación", "Contacto"],
-    href:  ["/sobre-nosotros", "/", "/contacto"],
+    name: ["Sobre Nosotros", "Ubicación", "Contacto"],
+    href: ["/sobre-nosotros", "/", "/contacto"],
   },
 ];
 
@@ -23,7 +23,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
           <img src="https://i.ibb.co/LvMyWPJ/logo-negro.png" className="w-32" />
           <div className="grid grid-cols-3 justify-between gap-4">
-            {LINKS.map(({ title}) => (
+            {LINKS.map(({ title }) => (
               <ul key={title}>
                 <Typography
                   variant="small"
@@ -32,16 +32,14 @@ export default function Footer() {
                 >
                   {title}
                 </Typography>
+                
                 {[...LINKS].map((items) => (
-                  <li key={items}>
+                  <li key={items.name}>
                     <Typography
                       color="gray"
                       className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
                     >
-                      <Link to={items.href}>
-                      {items}
-                      </Link>
-                      
+                      <Link to={items.href}>{items}</Link>
                     </Typography>
                   </li>
                 ))}
