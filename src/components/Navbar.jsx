@@ -1,7 +1,6 @@
 import { Fragment, useState } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import {
-  ArrowPathIcon,
   Bars3Icon,
   ChartPieIcon,
   CursorArrowRaysIcon,
@@ -124,16 +123,19 @@ export default function Navbar() {
               </Popover.Panel>
             </Transition>
           </Popover>
-
-          <a href="/" className="text-sm font-semibold leading-6 text-white">
-            Inicio
-          </a>
-          <a
-            href="/sobre-nosotros"
-            className="text-sm font-semibold leading-6 text-white"
-          >
-            Sobre Nosotros
-          </a>
+          <Link>
+            <a href="/" className="text-sm font-semibold leading-6 text-white">
+              Inicio
+            </a>
+          </Link>
+          <Link>
+            <a
+              href="/sobre-nosotros"
+              className="text-sm font-semibold leading-6 text-white"
+            >
+              Sobre Nosotros
+            </a>
+          </Link>
           <Link
             to="/contacto"
             className="text-sm font-semibold leading-6 text-white"
@@ -198,13 +200,19 @@ export default function Navbar() {
                         ))}
                       </Disclosure.Panel>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        <a href="/"> Inicio</a>
+                        <Link>
+                          <a href="/"> Inicio</a>
+                        </Link>
                       </Disclosure.Button>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        <a href="/sobre-nosotros">Sobre Nosotros</a>
+                        <Link>
+                          <a href="/sobre-nosotros">Sobre Nosotros</a>
+                        </Link>
                       </Disclosure.Button>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        <a href="/contacto">Contacto</a>
+                        <Link>
+                          <a href="/contacto">Contacto</a>
+                        </Link>
                       </Disclosure.Button>
                     </>
                   )}
