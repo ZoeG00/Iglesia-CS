@@ -74,7 +74,7 @@ export default function HomeSlider() {
               color="white"
               className="mb-12 opacity-80"
             >
-              Martes 20.30hs
+              Martes 21.00hs
             </Typography>
           </div>
         </div>
