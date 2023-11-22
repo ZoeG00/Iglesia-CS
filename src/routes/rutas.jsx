@@ -17,7 +17,7 @@ export default function Rutas() {
       <Route path="/jovenes" element={<Jovenes />} />
       <Route path="/matrimonios" element={<Matrimonios />} />
       <Route path="/contacto" element={<Contacto />} />
-      <Route path="/sobreNosotros" element={<SobreNosotros />} />
+      <Route path="/sobre-nosotros" element={<SobreNosotros />} />
     </Routes>
   );
 }

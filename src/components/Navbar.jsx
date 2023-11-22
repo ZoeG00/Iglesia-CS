@@ -13,10 +13,10 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Link } from "react-router-dom";
 
 const links = [
-  { name: "Niños", href: "/Kids", icon: ChartPieIcon },
-  { name: "Adolescentes", href: "/Adolescentes", icon: CursorArrowRaysIcon },
-  { name: "Jóvenes", href: "/Jovenes", icon: FingerPrintIcon },
-  { name: "Matrimonios", href: "/Matrimonios", icon: SquaresPlusIcon },
+  { name: "Niños", href: "/kids", icon: ChartPieIcon },
+  { name: "Adolescentes", href: "/adolescentes", icon: CursorArrowRaysIcon },
+  { name: "Jóvenes", href: "/jovenes", icon: FingerPrintIcon },
+  { name: "Matrimonios", href: "/matrimonios", icon: SquaresPlusIcon },
 ];
 
 function classNames(...classes) {
@@ -76,7 +76,7 @@ export default function Navbar() {
                     <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"></div>
                     <div className="flex-auto">
                       <a
-                        href="/Kids"
+                        href="/kids"
                         className="block font-semibold text-gray-900"
                       >
                         Kids
@@ -88,7 +88,7 @@ export default function Navbar() {
                     <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"></div>
                     <div className="flex-auto">
                       <a
-                        href="/Adolescentes"
+                        href="/adolescentes"
                         className="block font-semibold text-gray-900"
                       >
                         Adolescentes
@@ -100,7 +100,7 @@ export default function Navbar() {
                     <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"></div>
                     <div className="flex-auto">
                       <a
-                        href="/Jovenes"
+                        href="/jovenes"
                         className="block font-semibold text-gray-900"
                       >
                         Jóvenes
@@ -112,7 +112,7 @@ export default function Navbar() {
                     <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"></div>
                     <div className="flex-auto">
                       <a
-                        href="/Matrimonios"
+                        href="/matrimonios"
                         className="block font-semibold text-gray-900"
                       >
                         Matrimonios
@@ -129,13 +129,13 @@ export default function Navbar() {
             Inicio
           </a>
           <a
-            href="/SobreNosotros"
+            href="/sobre-nosotros"
             className="text-sm font-semibold leading-6 text-white"
           >
             Sobre Nosotros
           </a>
           <Link
-            to="/Contacto"
+            to="/contacto"
             className="text-sm font-semibold leading-6 text-white"
           >
             Contacto
@@ -201,10 +201,10 @@ export default function Navbar() {
                         <a href="/"> Inicio</a>
                       </Disclosure.Button>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        <a href="/SobreNosotros">Sobre Nosotros</a>
+                        <a href="/sobre-nosotros">Sobre Nosotros</a>
                       </Disclosure.Button>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        <a href="/Contacto">Contacto</a>
+                        <a href="/contacto">Contacto</a>
                       </Disclosure.Button>
                     </>
                   )}
