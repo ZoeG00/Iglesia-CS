@@ -11,17 +11,17 @@ import Footer from "./components/Footer";
 /*****
  Rutas
  *****/
- import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import Rutas from "./routes/rutas";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <Rutas />
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
