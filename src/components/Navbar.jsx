@@ -74,49 +74,53 @@ export default function Navbar() {
                   <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
                     <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"></div>
                     <div className="flex-auto">
-                      <a
-                        href="/kids"
-                        className="block font-semibold text-gray-900"
-                      >
-                        Kids
-                        <span className="absolute inset-0" />
-                      </a>
+                      <Link>
+                        <a
+                          href="/kids"
+                          className="block font-semibold text-gray-900"
+                        >
+                          Kids
+                        </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
                     <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"></div>
                     <div className="flex-auto">
-                      <a
-                        href="/adolescentes"
-                        className="block font-semibold text-gray-900"
-                      >
-                        Adolescentes
-                        <span className="absolute inset-0" />
-                      </a>
+                      <Link>
+                        <a
+                          href="/adolescentes"
+                          className="block font-semibold text-gray-900"
+                        >
+                          Adolescentes
+                        </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
                     <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"></div>
                     <div className="flex-auto">
-                      <a
-                        href="/jovenes"
-                        className="block font-semibold text-gray-900"
-                      >
-                        Jóvenes
-                        <span className="absolute inset-0" />
-                      </a>
+                      <Link>
+                        <a
+                          href="/jovenes"
+                          className="block font-semibold text-gray-900"
+                        >
+                          Jóvenes
+                        </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
                     <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"></div>
                     <div className="flex-auto">
-                      <a
-                        href="/matrimonios"
-                        className="block font-semibold text-gray-900"
-                      >
-                        Matrimonios
-                        <span className="absolute inset-0" />
-                      </a>
+                      <Link>
+                        <a
+                          href="/matrimonios"
+                          className="block font-semibold text-gray-900"
+                        >
+                          Matrimonios
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
