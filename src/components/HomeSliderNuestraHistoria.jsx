@@ -10,7 +10,7 @@ export default function HomeSliderNuestraHistoria() {
     >
       <div className="relative h-full w-full">
         <img
-          src="https://i.ibb.co/Y0c2T7c/20231009-223931.jpg"
+          src="https://i.ibb.co/fqnRcGW/20231009-223931.jpg"
           alt="20231009-223931"
           border="0"
           className="h-full w-full object-cover"
@@ -18,7 +18,7 @@ export default function HomeSliderNuestraHistoria() {
       </div>
       <div className="relative h-full w-full">
         <img
-          src="https://i.ibb.co/2y2vJk4/20231009-223345.jpg"
+          src="https://i.ibb.co/x1Nz9wP/20231009-223345.jpg"
           alt="20231009-223345"
           border="0"
           className="h-full w-full object-cover"
@@ -26,7 +26,7 @@ export default function HomeSliderNuestraHistoria() {
       </div>
       <div className="relative h-full w-full">
         <img
-          src="https://i.ibb.co/Srj8gSp/20231009-223644.jpg"
+          src="https://i.ibb.co/Qdkv0Nc/20231009-223644.jpg"
           alt="20231009-223644"
           border="0"
           className="h-full w-full object-cover"
@@ -34,7 +34,7 @@ export default function HomeSliderNuestraHistoria() {
       </div>
       <div className="relative h-full w-full">
         <img
-          src="https://i.ibb.co/4JStTBD/20231009-223456.jpg"
+          src="https://i.ibb.co/59XgB56/20231009-223456.jpg"
           alt="20231009-223456"
           border="0"
           className="h-full w-full object-cover"
@@ -42,7 +42,7 @@ export default function HomeSliderNuestraHistoria() {
       </div>
       <div className="relative h-full w-full">
         <img
-          src="https://i.ibb.co/yRSVDJy/20231009-223629.jpg"
+          src="https://i.ibb.co/5Mp1tzg/20231009-223629.jpg"
           alt="20231009-223629"
           border="0"
           className="h-full w-full object-cover"
@@ -50,7 +50,7 @@ export default function HomeSliderNuestraHistoria() {
       </div>
       <div className="relative h-full w-full">
         <img
-          src="https://i.ibb.co/BZqkMwB/20231009-223609.jpg"
+          src="https://i.ibb.co/MVSVX0s/20231009-223609.jpg"
           alt="20231009-223609"
           border="0"
           className="h-full w-full object-cover"
@@ -58,7 +58,7 @@ export default function HomeSliderNuestraHistoria() {
       </div>
       <div className="relative h-full w-full">
         <img
-          src="https://i.ibb.co/zZjKpHn/20231009-223701.jpg"
+          src="https://i.ibb.co/xFsKNRL/20231009-223701.jpg"
           alt="20231009-223701"
           border="0"
           className="h-full w-full object-cover"
@@ -66,7 +66,7 @@ export default function HomeSliderNuestraHistoria() {
       </div>
       <div className="relative h-full w-full">
         <img
-          src="https://i.ibb.co/fXZQQCQ/20231009-223406.jpg"
+          src="https://i.ibb.co/kXJYr53/20231009-223406.jpg"
           alt="20231009-223406"
           border="0"
           className="h-full w-full object-cover"
@@ -82,7 +82,7 @@ export default function HomeSliderNuestraHistoria() {
       </div>
       <div className="relative h-full w-full">
         <img
-          src="https://i.ibb.co/9GnYJXr/20231009-223525.jpg"
+          src="https://i.ibb.co/SKrYzwX/20231009-223525.jpg"
           alt="20231009-223525"
           border="0"
           className="h-full w-full object-cover"

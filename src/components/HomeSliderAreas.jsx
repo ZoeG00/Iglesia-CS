@@ -10,7 +10,7 @@ export default function HomeSliderAreas() {
     >
       <div className="relative h-full w-full">
         <img
-          src="https://i.ibb.co/hLYfK2R/grupos-04.jpg"
+          src="https://i.ibb.co/zJTFYcM/grupos-04.jpg"
           alt="grupos-04"
           border="0"
           className="h-full w-full object-cover"
@@ -38,7 +38,7 @@ export default function HomeSliderAreas() {
 
       <div className="relative h-full w-full">
         <img
-          src="https://i.ibb.co/Z1YHRWR/CONSEJER-APASTORAL-e1584919305302.jpg"
+          src="https://i.ibb.co/sCNQ4dh/CONSEJER-APASTORAL-e1584919305302.jpg"
           alt="CONSEJER-APASTORAL-e1584919305302"
           border="0"
           className="h-full w-full object-cover"
@@ -65,7 +65,7 @@ export default function HomeSliderAreas() {
 
       <div className="relative h-full w-full">
         <img
-          src="https://i.ibb.co/qC1MMxT/img.jpg"
+          src="https://i.ibb.co/YprgvD8/img.jpg"
           alt="img"
           border="0"
           className="h-full w-full object-cover"
@@ -99,7 +99,7 @@ export default function HomeSliderAreas() {
 
       <div className="relative h-full w-full">
         <img
-          src="https://i.ibb.co/09kdb9L/womendrinkingcoffee-575x301.jpg"
+          src="https://i.ibb.co/CQRs13Y/womendrinkingcoffee-575x301.jpg"
           alt="womendrinkingcoffee-575x301"
           border="0"
           className="h-full w-full object-cover"
@@ -126,7 +126,7 @@ export default function HomeSliderAreas() {
 
       <div className="relative h-full w-full">
         <img
-          src="https://i.ibb.co/ySd87nB/Screen-Shot-2020-03-01-at-12-56-36-PM.png"
+          src="https://i.ibb.co/ryTdzr7/Screen-Shot-2020-03-01-at-12-56-36-PM.png"
           alt="Screen-Shot-2020-03-01-at-12-56-36-PM"
           border="0"
           className="h-full w-full object-cover"

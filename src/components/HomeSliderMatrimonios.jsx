@@ -10,7 +10,7 @@ export default function HomeSliderMatrimonios() {
     >
       <div className="relative h-full w-full">
         <img
-          src="https://i.ibb.co/c8Sgkn9/manosdepastores.jpg"
+          src="https://i.ibb.co/Rh6QdwG//manosdepastores.jpg"
           alt="image 1"
           className="h-full w-full object-cover"
         />
@@ -33,7 +33,7 @@ export default function HomeSliderMatrimonios() {
       </div>
       <div className="relative h-full w-full">
         <img
-          src="https://i.ibb.co/71xLCCw/grupodematrimonios.jpg"
+          src="https://i.ibb.co/DMK2TXL/grupodematrimonios.jpg"
           alt="image 2"
           className="h-full w-full object-cover"
         />
@@ -58,7 +58,7 @@ export default function HomeSliderMatrimonios() {
       </div>
       <div className="relative h-full w-full">
         <img
-          src="https://i.ibb.co/khJtK2n/silvioymane.jpg"
+          src="https://i.ibb.co/J3D4qsW/silvioymane.jpg"
           alt="image 3"
           className="h-full w-full object-cover"
         />

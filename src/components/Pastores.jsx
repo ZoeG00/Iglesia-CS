@@ -4,7 +4,7 @@ export default function Pastores() {
       <div className="bg-gradient-to-r from-black to-azul p-12 text-white flex justify-center items-center">
         <div className="p-2">
           <img
-            src="https://i.ibb.co/FVNty1r/pastores.png"
+            src="https://i.ibb.co/6JysLtV/pastores.png"
             alt="pastores"
             className="rounded-full w-1/2 md:w-auto mx-auto my-2"
           />

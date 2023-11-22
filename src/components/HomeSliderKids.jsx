@@ -10,7 +10,7 @@ export default function HomeSliderKids() {
     >
       <div className="relative h-full w-full">
         <img
-          src="https://i.ibb.co/0rXvKvv/kids1.jpg"
+          src="https://i.ibb.co/mSqZQMx/kids1.jpg"
           alt="image 1"
           className="h-full w-full object-cover"
         />
@@ -31,7 +31,7 @@ export default function HomeSliderKids() {
       </div>
       <div className="relative h-full w-full">
         <img
-          src="https://i.ibb.co/4Z7vX9H/kids2.jpg"
+          src="https://i.ibb.co/nm8ht80/kids2.jpg"
           alt="image 2"
           className="h-full w-full object-cover"
         />
@@ -56,7 +56,7 @@ export default function HomeSliderKids() {
       </div>
       <div className="relative h-full w-full">
         <img
-          src="../../assets/kids3.jpg"
+          src="https://i.ibb.co/nbB20mv/kids3.jpg"
           alt="image 3"
           className="h-full w-full object-cover"
         />
