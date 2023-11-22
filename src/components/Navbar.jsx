@@ -101,10 +101,10 @@ export default function Navbar() {
                     <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"></div>
                     <div className="flex-auto">
                       <Link
-                          to="/matrimonios"
-                          className="block font-semibold text-gray-900"
-                        >
-                          Matrimonios
+                        to="/matrimonios"
+                        className="block font-semibold text-gray-900"
+                      >
+                        Matrimonios
                       </Link>
                     </div>
                   </div>
@@ -143,7 +143,7 @@ export default function Navbar() {
               <span className="sr-only">ICS</span>
               <img
                 className="h-8 w-auto"
-                src="https://i.ibb.co/jDcLRg1/logo-negro.png"
+                src="https://i.ibb.co/LvMyWP/logo-negro.png"
                 alt="logo"
               />
             </a>
@@ -176,28 +176,20 @@ export default function Navbar() {
                         {[...links].map((item) => (
                           <Disclosure.Button
                             key={item.name}
-                            as="a"
-                            href={item.href}
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                           >
-                            {item.name}
+                            <Link to={item.href}>{item.name}</Link>
                           </Disclosure.Button>
                         ))}
                       </Disclosure.Panel>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        <Link>
-                          <a href="/"> Inicio</a>
-                        </Link>
+                        <Link to="/">Inicio</Link>
                       </Disclosure.Button>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        <Link>
-                          <a href="/sobre-nosotros">Sobre Nosotros</a>
-                        </Link>
+                        <Link to="/sobre-nosotros">Sobre Nosotros</Link>
                       </Disclosure.Button>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        <Link>
-                          <a href="/contacto">Contacto</a>
-                        </Link>
+                        <Link to="/contacto">Contacto</Link>
                       </Disclosure.Button>
                     </>
                   )}

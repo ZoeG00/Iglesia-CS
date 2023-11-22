@@ -5,9 +5,9 @@ export default function SobreNosotros() {
     <>
       <div>
         <HomeSliderNuestraHistoria />
-        <h1 className="m-8 italic font-bold animate-pulse">Nuestra Historia</h1>
+        <h1 className="m-8 italic font-bold animate-pulse text-azul">Nuestra Historia</h1>
         <div className="flex justify-center">
-          <p className="w-1/2 p-4 border italic mb-4">
+          <p className="w-1/2 p-4 border border-azul italic mb-4">
             La iglesia Cristo Salva nació el día 24 de septiembre de 1993 en
             Buen Orden, San Martín, Mendoza.<br></br> La palabra Rema que recibimos se
             encuentra en Hageo 2:18-19 : Meditad, pues, en vuestro corazón,
@@ -28,7 +28,7 @@ export default function SobreNosotros() {
             vestiremos? Porque los gentiles buscan todas estas cosas; pero
             vuestro Padre celestial sabe que tenéis necesidad de todas estas
             cosas. Mas buscad primeramente el reino de Dios y su justicia, y
-            todas estas cosas os serán añadidas. En este año 2023 cumplimos 30
+            todas estas cosas os serán añadidas.<br></br> En este año 2023 cumplimos 30
             años sirviendo al Señor, y esperamos sean muchos más. ¡Dios te
             bendiga!
           </p>
