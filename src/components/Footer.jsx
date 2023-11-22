@@ -1,13 +1,16 @@
 import { Typography } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 const LINKS = [
   {
     title: "Áreas",
     items: ["Kids", "Adolescentes", "Jovenes", "Matrimonios"],
+    href: ["/kids", "/adolescentes", "/jovenes", "/matrimonios"]
   },
   {
     title: "Iglesia",
     items: ["Sobre Nosotros", "Ubicación", "Contacto"],
+    href:  ["/sobre-nosotros", "/", "/contacto"],
   },
 ];
 
@@ -32,12 +35,13 @@ export default function Footer() {
                 {items.map((link) => (
                   <li key={link}>
                     <Typography
-                      as="a"
-                      href={`/${link}`}
                       color="gray"
                       className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
                     >
+                      <Link to={link.href}>
                       {link}
+                      </Link>
+                      
                     </Typography>
                   </li>
                 ))}

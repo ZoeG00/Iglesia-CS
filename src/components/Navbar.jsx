@@ -143,7 +143,7 @@ export default function Navbar() {
               <span className="sr-only">ICS</span>
               <img
                 className="h-8 w-auto"
-                src="https://i.ibb.co/LvMyWP/logo-negro.png"
+                src="https://i.ibb.co/LvMyWPJ/logo-negro.png"
                 alt="logo"
               />
             </a>
