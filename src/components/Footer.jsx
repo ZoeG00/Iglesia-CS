@@ -33,7 +33,7 @@ export default function Footer() {
                   {title}
                 </Typography>
                 
-                {[...LINKS].map((items) => (
+                {LINKS.map((items) => (
                   <li key={items.name}>
                     <Typography
                       color="gray"
