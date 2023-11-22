@@ -1,21 +1,14 @@
 import { Fragment, useState } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
-import {
-  Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Link } from "react-router-dom";
 
 const links = [
-  { name: "Niños", href: "/kids", icon: ChartPieIcon },
-  { name: "Adolescentes", href: "/adolescentes", icon: CursorArrowRaysIcon },
-  { name: "Jóvenes", href: "/jovenes", icon: FingerPrintIcon },
-  { name: "Matrimonios", href: "/matrimonios", icon: SquaresPlusIcon },
+  { name: "Niños", href: "/kids" },
+  { name: "Adolescentes", href: "/adolescentes" },
+  { name: "Jóvenes", href: "/jovenes" },
+  { name: "Matrimonios", href: "/matrimonios" },
 ];
 
 function classNames(...classes) {
@@ -74,14 +67,32 @@ export default function Navbar() {
                   <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
                     <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"></div>
                     <div className="flex-auto">
-                      <Link>
-                        <a
-                          href="/kids"
-                          className="block font-semibold text-gray-900"
-                        >
-                          Kids
-                        </a>
+                      <Link
+                        to="/kids"
+                        className="block font-semibold text-gray-900"
+                      >
+                        Kids
                       </Link>
+                    </div>
+                  </div>
+                  <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                    <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"></div>
+                    <div className="flex-auto">
+                      <Link
+                        to="/adolescentes"
+                        className="block font-semibold text-gray-900"
+                      >
+                        Adolescentes
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                    <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"></div>
+                    <div className="flex-auto">
+                      <Link
+                        to="/jovenes"
+                        className="block font-semibold text-gray-900"
+                      ></Link>
                     </div>
                   </div>
                   <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
@@ -89,33 +100,7 @@ export default function Navbar() {
                     <div className="flex-auto">
                       <Link>
                         <a
-                          href="/adolescentes"
-                          className="block font-semibold text-gray-900"
-                        >
-                          Adolescentes
-                        </a>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
-                    <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"></div>
-                    <div className="flex-auto">
-                      <Link>
-                        <a
-                          href="/jovenes"
-                          className="block font-semibold text-gray-900"
-                        >
-                          Jóvenes
-                        </a>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
-                    <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"></div>
-                    <div className="flex-auto">
-                      <Link>
-                        <a
-                          href="/matrimonios"
+                          to="/matrimonios"
                           className="block font-semibold text-gray-900"
                         >
                           Matrimonios
@@ -127,18 +112,14 @@ export default function Navbar() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <Link>
-            <a href="/" className="text-sm font-semibold leading-6 text-white">
-              Inicio
-            </a>
+          <Link to="/" className="text-sm font-semibold leading-6 text-white">
+            Inicio
           </Link>
-          <Link>
-            <a
-              href="/sobre-nosotros"
-              className="text-sm font-semibold leading-6 text-white"
-            >
-              Sobre Nosotros
-            </a>
+          <Link
+            to="/sobre-nosotros"
+            className="text-sm font-semibold leading-6 text-white"
+          >
+            Sobre Nosotros
           </Link>
           <Link
             to="/contacto"
