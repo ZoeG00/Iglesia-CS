@@ -24,7 +24,7 @@ export default function HomeSliderAdos() {
               ADOLESCENTES
             </Typography>
             <Typography variant="h5" color="white" className="mb-12 opacity-80">
-              Sábados 16:30hs
+              Viernes 20:30hs
             </Typography>
           </div>
         </div>

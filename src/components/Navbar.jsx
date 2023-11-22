@@ -92,19 +92,19 @@ export default function Navbar() {
                       <Link
                         to="/jovenes"
                         className="block font-semibold text-gray-900"
-                      ></Link>
+                      >
+                        Jóvenes
+                      </Link>
                     </div>
                   </div>
                   <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
                     <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"></div>
                     <div className="flex-auto">
-                      <Link>
-                        <a
+                      <Link
                           to="/matrimonios"
                           className="block font-semibold text-gray-900"
                         >
                           Matrimonios
-                        </a>
                       </Link>
                     </div>
                   </div>

@@ -9,18 +9,18 @@ export default function SobreNosotros() {
         <div className="flex justify-center">
           <p className="w-1/2 p-4 border italic mb-4">
             La iglesia Cristo Salva nació el día 24 de septiembre de 1993 en
-            Buen Orden, San Martín, Mendoza. La palabra Rema que recibimos se
+            Buen Orden, San Martín, Mendoza.<br></br> La palabra Rema que recibimos se
             encuentra en Hageo 2:18-19 : Meditad, pues, en vuestro corazón,
             desde este día en adelante, desde el día veinticuatro del noveno
             mes, desde el día que se echó el cimiento del templo de Jehová;
             meditad, pues, en vuestro corazón. 19 ¿No está aún la simiente en el
             granero? Ni la vid, ni la higuera, ni el granado, ni el árbol de
-            olivo ha florecido todavía; mas desde este día os bendeciré. El
+            olivo ha florecido todavía; mas desde este día os bendeciré.<br></br> El
             nombre del templo es "Cristo Salva", fue elegido así debido a que en
             aquellos años estaban las campañas de el hermano Carlos Anacondia,
             sacábamos fotografías, y tantas maravillas y milagros que se
             realizaban nos cautivó, no predicábamos sanidad, sino más bien
-            salvación. Esa fue la razón de llamarnos Iglesia Cristo Salva;
+            salvación.<br></br> Esa fue la razón de llamarnos Iglesia Cristo Salva;
             porque el mayor milagro que Dios puede hacer es darnos la
             oportunidad de ser salvos. Esa es nuestra más grande motivación como
             iglesia, nuestro lema, se encuentra en Mateo 6:31-33 : No os

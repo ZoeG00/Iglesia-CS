@@ -74,7 +74,7 @@ export default function HomeSliderNuestraHistoria() {
       </div>
       <div className="relative h-full w-full">
         <img
-          src="https://i.ibb.co/QbpFYBs/20231009-223715.jpg"
+          src="https://i.ibb.co/SKrYzwX/20231009-223715.jpg"
           alt="20231009-223715"
           border="0"
           className="h-full w-full object-cover"
@@ -82,7 +82,7 @@ export default function HomeSliderNuestraHistoria() {
       </div>
       <div className="relative h-full w-full">
         <img
-          src="https://i.ibb.co/SKrYzwX/20231009-223525.jpg"
+          src="https://i.ibb.co/zsD7FNB/20231009-223525.jpg"
           alt="20231009-223525"
           border="0"
           className="h-full w-full object-cover"
