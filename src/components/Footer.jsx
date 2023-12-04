@@ -23,7 +23,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
           <img src="https://i.ibb.co/LvMyWPJ/logo-negro.png" className="w-32" />
           <div className="grid grid-cols-3 justify-between gap-4">
-            {LINKS.map(({ title }) => (
+            {LINKS.map(({ title, name, href }) => (
               <ul key={title}>
                 <Typography
                   variant="small"
@@ -32,14 +32,13 @@ export default function Footer() {
                 >
                   {title}
                 </Typography>
-                
-                {LINKS.map((items) => (
-                  <li key={items.name}>
+                {name.map((item, index) => (
+                  <li key={index}>
                     <Typography
                       color="gray"
                       className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
                     >
-                      <Link to={items.href}>{items.name}</Link>
+                      <Link to={href[index]}>{item}</Link>
                     </Typography>
                   </li>
                 ))}
